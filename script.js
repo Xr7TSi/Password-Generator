@@ -29,32 +29,33 @@ var password = [];
 function generatePassword() {
 
   var numberOfCharactersResponse = prompt ("How long should your password be?");
-  // var upperCaseResponse = prompt ("Do you want to include upper case letters? Please respond y or n.");
-  // var lowerCaseResponse = prompt ("Do you want to include lower case letters? Please respond y or n.");
-  // var numberResponse = prompt ("Do you want to include numbers? Please respond y or n.");
-  // var specialCharacterResponse = prompt ("Do you want to include special characters? Please respond y or n.");
+  var upperCaseResponse = prompt ("Do you want to include upper case letters? Please respond y or n.");
+  var lowerCaseResponse = prompt ("Do you want to include lower case letters? Please respond y or n.");
+  var numberResponse = prompt ("Do you want to include numbers? Please respond y or n.");
+  var specialCharacterResponse = prompt ("Do you want to include special characters? Please respond y or n.");
 
-  if  (numberOfCharactersResponse > "7") && (numberOfCharactersResponse < "129") {
-    console.log(numberOfCharactersResponse)
-  }
+  if  ((numberOfCharactersResponse > 7) && (numberOfCharactersResponse < 129)) {
+    console.log(numberOfCharactersResponse);
+    }
 
-  // if (upperCaseResponse === "y") {
-  //   characterBucket = upperCase.concat(characterBucket);
-  //   } 
+  if (upperCaseResponse === "y") {
+    characterBucket = upperCase.concat(characterBucket);
+    } 
 
-  // if (lowerCaseResponse === "y") {
-  //   characterBucket = lowerCase.concat(characterBucket);
-  //   } 
+  if (lowerCaseResponse === "y") {
+    characterBucket = lowerCase.concat(characterBucket);
+    } 
 
-  // if (numberResponse === "y") {
-  //   characterBucket = number.concat(characterBucket);
-  //   } 
+  if (numberResponse === "y") {
+    characterBucket = number.concat(characterBucket);
+    } 
 
-  // if (specialCharacterResponse === "y") {
-  //   characterBucket = specialCharacter.concat(characterBucket);
-  // }  
+  if (specialCharacterResponse === "y") {
+    characterBucket = specialCharacter.concat(characterBucket);
+  }  
 
 }
+
 
 
 
