@@ -55,21 +55,18 @@ function generatePassword() {
     characterBucket = specialCharacter.concat(characterBucket);
   }  
 
-  
+  for (var i = 0; i < numberOfCharactersResponse; i++) {
 
-  // for (var i = 0; i < numberOfCharactersResponse; i++) {
+    function getPassword(items)
+  {
+    
+  return characterBucket[Math.floor(Math.random()*characterBucket.length)];
+      
+  }
 
-    function random_item(items)
-{
-  
-return items[Math.floor(Math.random()*items.length)];
-     
-}
+  console.log(getPassword(characterBucket));
 
-var items = [254, 45, 212, 365, 2543];
-console.log(random_item(items));
-
-
+  }
 
   }
 
