@@ -1,7 +1,5 @@
-var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-var specialCharacters = ["!", "#", "$", "%", "&", "*", "+", "-", "<", ">", "?", "@"]
+
+
 
 
 // Assignment Code
@@ -19,8 +17,38 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
- function askUpperCase() {
-    window.prompt ("Do you want to include upper case letters?")
- }
+
+
+function generatePassword() {
+
+  var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+  var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+  var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+  var specialCharacter = ["!", "#", "$", "%", "&", "*", "+", "-", "<", ">", "?", "@"]
+ 
+  var password = []
+
+
+    var upperCaseResponse= prompt ("Do you want to include upper case letters? Please respond Y or N.");
+    var LowerCaseResponse= prompt ("Do you want to include lower case letters? Please respond Y or N.");
+    var numberResponse= prompt ("Do you want to include numbers? Please respond Y or N.");
+    var numberResponse= prompt ("Do you want to include special characters? Please respond Y or N.");
+
+
+      if (upperCaseResponse === "Y") {
+          var characterBucket = upperCase;
+          console.log(characterBucket);
+          } 
+
+   
+
+  }
+
+//   function askUpperCase() {
+//     window.prompt ("Do you want to include upper case letters? Please respond Y or N.")
+//     if (askUpperCase === "Y"){
+//       characterBucket.concat(upperCase)
+//     } 
+
 
 
