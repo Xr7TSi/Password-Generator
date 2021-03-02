@@ -17,38 +17,48 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-var specialCharacter = ["!", "#", "$", "%", "&", "*", "+", "-", "<", ">", "?", "@"]
-var characterBucket = []
-var password = []
+var numberOfCharacters = []
+var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var specialCharacter = ["!", "#", "$", "%", "&", "*", "+", "-", "<", ">", "?", "@"];
+var characterBucket = [];
+var password = [];
+
 
 function generatePassword() {
 
-    var upperCaseResponse = prompt ("Do you want to include upper case letters? Please respond y or n.");
-    var lowerCaseResponse = prompt ("Do you want to include lower case letters? Please respond y or n.");
-    var numberResponse = prompt ("Do you want to include numbers? Please respond y or n.");
-    var specialCharacterResponse = prompt ("Do you want to include special characters? Please respond y or n.");
+  var numberOfCharactersResponse = prompt ("How long should your password be?");
+  // var upperCaseResponse = prompt ("Do you want to include upper case letters? Please respond y or n.");
+  // var lowerCaseResponse = prompt ("Do you want to include lower case letters? Please respond y or n.");
+  // var numberResponse = prompt ("Do you want to include numbers? Please respond y or n.");
+  // var specialCharacterResponse = prompt ("Do you want to include special characters? Please respond y or n.");
 
-
-    if (upperCaseResponse === "y") {
-      characterBucket = upperCase.concat(characterBucket);
-      } 
-
-    if (lowerCaseResponse === "y") {
-      characterBucket = lowerCase.concat(characterBucket);
-      } 
-
-    if (numberResponse === "y") {
-      characterBucket = number.concat(characterBucket);
-      } 
-
-    if (specialCharacterResponse === "y") {
-      characterBucket = specialCharacter.concat(characterBucket);
-    }  
-
+  if  (numberOfCharactersResponse > "7") && (numberOfCharactersResponse < "129") {
+    console.log(numberOfCharactersResponse)
   }
+
+  // if (upperCaseResponse === "y") {
+  //   characterBucket = upperCase.concat(characterBucket);
+  //   } 
+
+  // if (lowerCaseResponse === "y") {
+  //   characterBucket = lowerCase.concat(characterBucket);
+  //   } 
+
+  // if (numberResponse === "y") {
+  //   characterBucket = number.concat(characterBucket);
+  //   } 
+
+  // if (specialCharacterResponse === "y") {
+  //   characterBucket = specialCharacter.concat(characterBucket);
+  // }  
+
+}
+
+
+
+
 
 
 
