@@ -55,19 +55,22 @@ function generatePassword() {
     characterBucket = specialCharacter.concat(characterBucket);
   }  
 
-  for (var i = 0; i < numberOfCharactersResponse; i++) {
-    console.log("Hello world!")
-    
-  }
+  
 
+  // for (var i = 0; i < numberOfCharactersResponse; i++) {
+
+    function random_item(items)
+{
+  
+return items[Math.floor(Math.random()*items.length)];
+     
 }
 
+var items = [254, 45, 212, 365, 2543];
+console.log(random_item(items));
 
 
 
-
-
-
-
+  }
 
 
