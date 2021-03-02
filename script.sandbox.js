@@ -41,7 +41,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-function generatePassword() {
+function generateCharacterBucket() {
 
   var upperCaseResponse= prompt ("Do you want to include upper case letters? Please respond Y or N.")
   
