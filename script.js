@@ -34,7 +34,7 @@ function generatePassword() {
   var specialCharacterResponse = prompt ("Do you want to include special characters? Please respond y or n.");
 
   if  ((numberOfCharactersResponse < 8) || (numberOfCharactersResponse > 128)) {
-    alert("Number of characters must be between 8 and 128.");
+    alert("Number of characters must be between 8 and 128."); numberOfCharactersResponse = (0);
      generatePassword();
     }
 
