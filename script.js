@@ -57,6 +57,12 @@ function generatePassword() {
   for (var i = 0; i < numberOfCharactersResponse; i++) {
    passwordToStringify.push (characterBucket[Math.floor(Math.random()*characterBucket.length)]);
   }
-   password = (passwordToStringify.join(''));
+  password = (passwordToStringify.join(''));
+
+  return password
+  
   }
+
+  
+  
 
