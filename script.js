@@ -32,6 +32,7 @@ function generatePassword() {
   if  ((numberOfCharactersResponse < 8) || (numberOfCharactersResponse > 128)) {
     alert("Number of characters must be between 8 and 128."); numberOfCharactersResponse = (null); 
     Program.restart();
+    return;
     }
 
   if (upperCaseResponse === "y") {
