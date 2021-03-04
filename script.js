@@ -31,8 +31,7 @@ function generatePassword() {
   
   if  ((numberOfCharactersResponse < 8) || (numberOfCharactersResponse > 128)) {
     alert("Number of characters must be between 8 and 128."); numberOfCharactersResponse = (null); 
-    Program.restart();
-    return;
+    generatePassword();
     }
 
   if (upperCaseResponse === "y") {
@@ -41,7 +40,7 @@ function generatePassword() {
       characterBucket = characterBucket} 
       else{ numberOfCharactersResponse = (null); upperCaseResponse = (null);
       alert("Please respond with lower case y or n.");
-      Program.restart();
+      generatePassword();
       } 
 
   if (lowerCaseResponse === "y") {
@@ -50,7 +49,7 @@ function generatePassword() {
       characterBucket = characterBucket} 
       else{ numberOfCharactersResponse = (null); upperCaseResponse = (null); lowerCaseResponse =(null);
       alert("Please respond with lower case y or n.");
-      Program.restart();
+      generatePassword();
       }
 
   if (numberResponse === "y") {
@@ -59,7 +58,7 @@ function generatePassword() {
       characterBucket = characterBucket} 
       else{ numberOfCharactersResponse = (null); upperCaseResponse = (null); lowerCaseResponse =(null); numberResponse = (null);
       alert("Please respond with lower case y or n.");
-      Program.restart();
+      generatePassword();
       }
 
   if (specialCharacterResponse === "y") {
@@ -68,7 +67,7 @@ function generatePassword() {
     characterBucket = characterBucket} 
     else{ numberOfCharactersResponse = (null); upperCaseResponse = (null); lowerCaseResponse =(null); numberResponse = (null); specialCharacterResponse = (null);
     alert("Please respond with lower case y or n.");
-    Program.restart();
+    generatePassword();
     }
 
   for (var i = 0; i < numberOfCharactersResponse; i++) {
@@ -79,12 +78,13 @@ function generatePassword() {
   if (upperCaseResponse === "n" && lowerCaseResponse === "n" && numberResponse === "n" && specialCharacterResponse === "n") {
     numberOfCharactersResponse = (null); upperCaseResponse = (null); lowerCaseResponse =(null); numberResponse = (null); specialCharacterResponse = (null); characterBucket = (null);
     alert("Please select at least one character type.");
-    Program.restart();
+    generatePassword();
   } 
 
   return password
 
   }
+
 
  
 
