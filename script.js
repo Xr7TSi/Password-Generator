@@ -38,7 +38,7 @@ function generatePassword() {
     characterBucket = upperCase.concat(characterBucket);
     } else if (upperCaseResponse === "n") {
       characterBucket = characterBucket} 
-      else{ numberOfCharactersResponse = (null); upperCaseResponse = (null);
+      else { numberOfCharactersResponse = (null); upperCaseResponse = (null);
       alert("Please respond with lower case y or n.");
       generatePassword();
       } 
@@ -70,21 +70,21 @@ function generatePassword() {
     generatePassword();
     }
 
-  for (var i = 0; i < numberOfCharactersResponse; i++) {
-   passwordToStringify.push (characterBucket[Math.floor(Math.random()*characterBucket.length)]);
-  }
-  password = (passwordToStringify.join(''));
-
   if (upperCaseResponse === "n" && lowerCaseResponse === "n" && numberResponse === "n" && specialCharacterResponse === "n") {
     numberOfCharactersResponse = (null); upperCaseResponse = (null); lowerCaseResponse =(null); numberResponse = (null); specialCharacterResponse = (null); characterBucket = (null);
     alert("Please select at least one character type.");
     generatePassword();
   } 
 
+  for (var i = 0; i < numberOfCharactersResponse; i++) {
+    passwordToStringify.push (characterBucket[Math.floor(Math.random()*characterBucket.length)]);
+   }
+  
+  password = (passwordToStringify.join(''));
+
   return password
 
   }
-
 
  
 
