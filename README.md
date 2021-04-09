@@ -1,7 +1,9 @@
 # Password-Generator
 
 
-This Password Generator creates a password based on user input including desired character type and desired password length.
+This Password Generator creates a password with user determined characteristics including desired character type and desired password length.
+
+Password-Generator uses JavaScript, HTML and CSS.
 
 [Go to Password-Generator](https://xr7tsi.github.io/Password-Generator/)
 
