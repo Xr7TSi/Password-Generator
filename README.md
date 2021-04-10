@@ -8,6 +8,9 @@ Password-Generator uses JavaScript, HTML and CSS.
 [Go to Password-Generator](https://xr7tsi.github.io/Password-Generator/)
 
 ![Password-Generator demo](./assets/03-javascript-homework-demo-resize.png)
+![Password-Generator demo](./assets/Password-Generator-2-resize.png)
+
+Created by Jonathan Rein https://github.com/Xr7TSi
 
 ## License
 [MIT](MIT License
